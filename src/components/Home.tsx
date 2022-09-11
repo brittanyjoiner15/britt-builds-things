@@ -1,40 +1,18 @@
 import {
-  EuiButton,
   EuiEmptyPrompt,
-  EuiHeaderLink,
   EuiImage,
-  EuiLink,
-  EuiPage,
   EuiPageTemplate,
   EuiSpacer,
-  EuiTitle,
 } from "@elastic/eui";
 import React from "react";
-
-const newsletterCTA = (
-  <EuiButton iconType="email" fill>
-    Get updates about what I build
-  </EuiButton>
-);
-
-const rightSideItems = [
-  <EuiHeaderLink>For Founders and Brands</EuiHeaderLink>,
-  <EuiHeaderLink>For Builders</EuiHeaderLink>,
-  <EuiHeaderLink>My Projects</EuiHeaderLink>,
-  <EuiHeaderLink>About Britt</EuiHeaderLink>,
-  newsletterCTA,
-];
+// import Header from "./Header";
+import { newsletterCTA } from "./utils";
 
 export default function Home() {
   return (
     <EuiPageTemplate>
-      <EuiPageTemplate.Header
-        iconType="logoElastic"
-        pageTitle="Britt Builds Things"
-        rightSideItems={rightSideItems}
-        rightSideGroupProps={{ direction: "column" }}
-        responsive={false}
-      />
+      {/* <Header /> */} // commenting off for now til i figure out why it's not
+      working
       <EuiPageTemplate.Section>
         <EuiImage
           size="l"

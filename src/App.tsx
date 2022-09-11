@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./components/Home";
-import { EuiButton, EuiProvider } from "@elastic/eui";
+import { EuiProvider } from "@elastic/eui";
 
 function App() {
   return (
