@@ -11,7 +11,7 @@ import { newsletterCTA } from "./utils";
 export default function Home() {
   return (
     <EuiPageTemplate>
-      {/* <Header /> */} // commenting off for now til i figure out why it's not
+      {/* <Header /> // commenting off for now til i figure out why it's not */}
       working
       <EuiPageTemplate.Section>
         <EuiImage
