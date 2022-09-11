@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
-import { EuiButton } from "@elastic/eui";
+import Home from "./components/Home";
+import { EuiButton, EuiProvider } from "@elastic/eui";
 
 function App() {
   return (
     <div className="App">
-      <EuiButton>Hi</EuiButton>
+      <EuiProvider colorMode="light">
+        <Home />
+      </EuiProvider>
     </div>
   );
 }
